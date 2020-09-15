@@ -12,7 +12,8 @@ namespace BusCompany.UnitTests
         [InlineData(1, "07/26/2018", 3012)]
         [InlineData(100, "09/26/2018", 3498)]
         [InlineData(501, "09/26/2018", 6704)]
-        public void CalculatePrice_ValidInlineData_PriceIsCorrect(int distance, string dateString, decimal expectedPrice)
+        public void CalculatePrice_ValidInlineData_PriceIsCorrect(int distance, string dateString,
+            decimal expectedPrice)
         {
             //Arrange
             PriceCalculator calculator = new PriceCalculator();

@@ -37,11 +37,16 @@ namespace Buscompany.UnitTests
         // (i.e. unit tests using the MemberData attribute)
         public static IEnumerable<object[]> GetData()
         {
-            yield return new object[] { 0, lowSeasonDate, 2500 };
-            yield return new object[] { 1, lowSeasonDate, 2510 };
-            yield return new object[] { 1, highSeasonDate, 3012 };
-            yield return new object[] { 100, lowSeasonDate, 3498 };
-            yield return new object[] { 501, lowSeasonDate, 6704 };
+            var data = new List<object[]>
+            {
+                new object[] { 0, lowSeasonDate, 2500 },
+                new object[] { 1, lowSeasonDate, 2510 },
+                new object[] { 1, highSeasonDate, 3012 },
+                new object[] { 100, lowSeasonDate, 3498 },
+                new object[] { 501, lowSeasonDate, 6704 }
+            };
+
+            return data;
         }
 
     }
