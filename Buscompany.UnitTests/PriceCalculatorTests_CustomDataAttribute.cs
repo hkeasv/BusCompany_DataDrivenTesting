@@ -1,6 +1,7 @@
 ﻿using System;
 using Xunit;
 using BusCompany;
+using System.Globalization;
 
 namespace Buscompany.UnitTests
 {
@@ -13,7 +14,7 @@ namespace Buscompany.UnitTests
             //Arrange
             PriceCalculator calculator = new PriceCalculator();
             //Act
-            decimal price = calculator.CalculatePrice(distance, DateTime.Parse(dateString));
+            decimal price = calculator.CalculatePrice(distance, DateTime.Parse(dateString, CultureInfo.CreateSpecificCulture("en-US")));
             //Assert
             Assert.Equal(expectedPrice, price);
         }

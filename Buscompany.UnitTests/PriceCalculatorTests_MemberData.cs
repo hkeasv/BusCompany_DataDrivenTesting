@@ -25,6 +25,9 @@ namespace Buscompany.UnitTests
             return data;
         }
 
+
+
+
         [Theory]
         [MemberData(nameof(GetLocalData))]
         public void CalculatePrice_ValidMemberData_PriceIsCorrect(int distance, DateTime date, decimal expectedPrice)
@@ -36,6 +39,12 @@ namespace Buscompany.UnitTests
             //Assert
             Assert.Equal(expectedPrice, price);
         }
+
+
+
+
+
+
 
         [Theory]
         [MemberData(nameof(TestDataGenerator.GetData), MemberType = typeof(TestDataGenerator))]
