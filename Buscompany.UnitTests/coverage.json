@@ -1,0 +1,109 @@
+{
+  "BusCompany.dll": {
+    "/Users/hk/Documents/Undervisning/Test/Examples/BusCompany_DataDrivenTesting/BusCompany/PriceCalculator.cs": {
+      "BusCompany.PriceCalculator": {
+        "System.Decimal BusCompany.PriceCalculator::CalculatePrice(System.Int32,System.DateTime)": {
+          "Lines": {
+            "13": 25,
+            "14": 75,
+            "16": 25,
+            "17": 0,
+            "19": 25,
+            "20": 15,
+            "21": 10,
+            "22": 5,
+            "23": 5,
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5,
+            "28": 5,
+            "29": 5,
+            "30": 5,
+            "32": 25,
+            "35": 25,
+            "36": 5,
+            "38": 25,
+            "39": 25
+          },
+          "Branches": [
+            {
+              "Line": 16,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 16,
+              "Offset": 15,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 25
+            },
+            {
+              "Line": 19,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 15
+            },
+            {
+              "Line": 19,
+              "Offset": 37,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 10
+            },
+            {
+              "Line": 21,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 5
+            },
+            {
+              "Line": 21,
+              "Offset": 58,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 5
+            },
+            {
+              "Line": 35,
+              "Offset": 144,
+              "EndOffset": 146,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 5
+            },
+            {
+              "Line": 35,
+              "Offset": 144,
+              "EndOffset": 159,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 25
+            }
+          ]
+        },
+        "System.Void BusCompany.PriceCalculator::.ctor()": {
+          "Lines": {
+            "7": 25,
+            "8": 25,
+            "9": 25,
+            "10": 25,
+            "11": 25
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
