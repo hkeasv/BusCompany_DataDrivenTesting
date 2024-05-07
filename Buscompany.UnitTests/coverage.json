@@ -1,6 +1,6 @@
 {
   "BusCompany.dll": {
-    "/Users/hk/Documents/Undervisning/Test/Examples/BusCompany_DataDrivenTesting/BusCompany/PriceCalculator.cs": {
+    "/Users/hk/Documents/Undervisning/Software Quality/Examples/BusCompany_DataDrivenTesting/BusCompany/PriceCalculator.cs": {
       "BusCompany.PriceCalculator": {
         "System.Decimal BusCompany.PriceCalculator::CalculatePrice(System.Int32,System.DateTime)": {
           "Lines": {
