@@ -11,15 +11,15 @@ namespace Buscompany.UnitTests
         static DateTime highSeasonDate = new DateTime(2018, 7, 26);
 
 
-        public static IEnumerable<object[]> GetLocalData()
+        public static TheoryData<int, DateTime, decimal> GetLocalData()
         {
-            var data = new List<object[]>
+            var data = new TheoryData<int, DateTime, decimal>
             {
-                new object[] { 0, lowSeasonDate, 2500 },
-                new object[] { 1, lowSeasonDate, 2510 },
-                new object[] { 1, highSeasonDate, 3012 },
-                new object[] { 100, lowSeasonDate, 3498 },
-                new object[] { 501, lowSeasonDate, 6704 }
+                { 0, lowSeasonDate, 2500 },
+                { 1, lowSeasonDate, 2510 },
+                { 1, highSeasonDate, 3012 },
+                { 100, lowSeasonDate, 3498 },
+                { 501, lowSeasonDate, 6704 }
             };
 
             return data;
