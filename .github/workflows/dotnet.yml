@@ -24,7 +24,7 @@ jobs:
     - name: Install sonarscanner
       run: dotnet tool install --global dotnet-sonarscanner
     - name: Begin Sonar scan
-      run: dotnet sonarscanner begin /k:"hkeasv_BusCompany_DataDrivenTesting" /o:"hkeasv" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.token=${{ secrets.SONAR_TOKEN }} /d:sonar.cs.opencover.reportsPaths=coverage.xml
+      run: dotnet sonarscanner begin /k:"hkeasv_BusCompany_DataDrivenTesting" /o:"hkeasv" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.token=${{ secrets.SONAR_TOKEN }}
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
