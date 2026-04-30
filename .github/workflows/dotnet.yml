@@ -19,6 +19,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
+    - name: Install Coverlet
+      run: dotnet tool install --global coverlet.console
     - name: Install sonarscanner
       run: dotnet tool install --global dotnet-sonarscanner
     - name: Begin Sonar scan
