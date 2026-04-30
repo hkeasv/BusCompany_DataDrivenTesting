@@ -4,7 +4,7 @@ namespace BusCompany
 {
     public class PriceCalculator
     {
-        int initialFee = 2500;
+        int initialFee = 2400;
         int d1KmFee = 10;
         int d2KmFee = 8;
         int d3KmFee = 6;
