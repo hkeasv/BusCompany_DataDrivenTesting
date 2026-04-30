@@ -25,6 +25,8 @@ jobs:
       run: dotnet tool install --global dotnet-sonarscanner
     - name: Begin Sonar scan
       run: dotnet sonarscanner begin /k:"hkeasv_BusCompany_DataDrivenTesting" /o:"hkeasv" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.token=${{ secrets.SONAR_TOKEN }}
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -33,3 +35,5 @@ jobs:
       run: coverlet .\BusCompany.UnitTests\bin\Debug\net10.0\BusCompany.UnitTests.dll --target "dotnet" --targetargs "test --no-build" -f=opencover -o="coverage.xml"
     - name: End Sonar scan
       run: dotnet sonarscanner end /d:sonar.token=${{ secrets.SONAR_TOKEN }}
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
