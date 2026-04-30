@@ -14,6 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
     - name: Begin Sonar scan
       run: dotnet sonarscanner begin /k:"hkeasv_BusCompany_DataDrivenTesting" /d:sonar.token="SonarQubeCloudHK" /d:sonar.cs.opencover.reportsPaths=coverage.xml
     - name: Restore dependencies
