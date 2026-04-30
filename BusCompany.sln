@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buscompany.UnitTests", "Buscompany.UnitTests\Buscompany.UnitTests.csproj", "{8A6AF5DE-4A26-4B45-B0BF-7A3D4B842029}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buscompany.UnitTests", "Buscompany.UnitTests\BusCompany.UnitTests.csproj", "{8A6AF5DE-4A26-4B45-B0BF-7A3D4B842029}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusCompany", "BusCompany\BusCompany.csproj", "{589D6C8F-E7E0-4423-BF27-E2F9E2F35B57}"
 EndProject
