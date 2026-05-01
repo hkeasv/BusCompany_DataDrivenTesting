@@ -26,7 +26,9 @@ jobs:
       run: dotnet tool install --global dotnet-sonarscanner
       
     - name: Begin Sonar scan
-      run: dotnet sonarscanner begin /k:"hkeasv_BusCompany_DataDrivenTesting" /o:"hkeasv" /d:sonar.token=${{ secrets.SONAR_TOKEN }} /d:sonar.cs.opencover.reportsPaths=coverage.xml
+      env:
+        TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: dotnet sonarscanner begin /k:"hkeasv_BusCompany_DataDrivenTesting" /o:"hkeasv" /d:sonar.token="$TOKEN" /d:sonar.cs.opencover.reportsPaths=coverage.xml
       
     - name: Restore dependencies
       run: dotnet restore
@@ -37,4 +39,4 @@ jobs:
       run: coverlet ./Buscompany.UnitTests/bin/Debug/net10.0/Buscompany.UnitTests.dll --target "dotnet" --targetargs "test --no-build" -f=opencover -o="coverage.xml"
       
     - name: End Sonar scan
-      run: dotnet sonarscanner end /d:sonar.token=${{ secrets.SONAR_TOKEN }}
+      run: dotnet sonarscanner end /d:sonar.token="$TOKEN"
